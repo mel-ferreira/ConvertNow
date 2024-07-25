@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+:root {
+  --background: #135688;
+  --conversor: #F8EDE3;
+  --grey: #322C2B
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito Sans", sans-serif;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-image: url(../public/bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.wrapper {
+    width: 100%;
+    max-width: 90%;
+    margin: 0 auto
+
+}
+.titulo {
+  font-weight: 600;
+  text-align: center;
+  color: #fff;
+  padding: 60px 0;
+}
+.conversor {
+  background-color: var(--conversor);
+  padding: 50px;
+  border-radius: 30px;
+  max-width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  text-align: center;
+  width: 600px;
+}
+.conversor-svg {
+  width: 50px;
+  height: 50px;
+  background-color: var(--grey);
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+form svg {
+  fill: #fff;
+  width: 30px;
+  height: 30px;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.valor {
+  font-size: 20px;
+  font-weight: 600;
+}
+input {
+  margin: 10px 0;
+}
+input, select {
+  width: 80px;
+  height: 30px;
+  overflow-y: hidden;
+  border-radius: 5px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  text-align: center;
+}
+input:hover, input:focus{
+  border: 1px solid var(--grey);
+  outline: none;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+.form-dobra img {
+  width: 40px;
+  height: 40px;
+}
+
+.img-select {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 80pxpx;
+}
+button {
+  padding: 15px 30px;
+  margin-top: 15px;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--grey);
+  color: #fff;
+  cursor: pointer;
+  transition: .8s;
+}
+button:hover {
+  transform: scale(1.040);
+}
